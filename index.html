@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="veiwport" content="width=device-width, initial-scale 1.0">  
+  <title>ULTIMATE TECH PROJECT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/ultimate logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu-removebg-preview.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Smart Solutions for <br> All Your Tech Problems</h1>
+                <p>professional computer repair and technology service provider specializing in <br> laptop and desktop repairs, software installation, system troubleshooting, <br> hardware replacement, virus removal, and general IT support.</p>
+                <a href="" class="button">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="image/lap 1.png" >
+            </div>
+        </div>
+    </div>
+</div> 
+<!------ featured categories ------> 
+   <br><br><br> <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="image/ultimate tech design 2.png" width="300px" height="340">
+                </div>
+                <div class="col-3">
+                    <img src="image/custom build.jpg" width="300px" height="340px">
+                </div>
+                <div class="col-3">
+                    <img src="image/worh show 1.jpg" width="300" height="340">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<!-------- Services We Rendered -------->
+    <div class="small-container">
+        <h2 class="title">Services We Rendered</h2>
+        <h3>Games Installation</h3>
+        <div class="row">
+            <div class="col-4">
+                <img src="image/ cod wf (1).jpg" width="300px" height="350">
+                <h4>Call Of Duty Modern Warfare 2,3,4</h4>
+                <input type="checkbox">
+            </div>
+            <div class="col-4">
+                <img src="image/pes 2024.jpg" width="300px" height="350">
+                <h4>PES 2024</h4>
+                <input type="checkbox">
+            </div>
+            <div class="col-4">
+                <img src="image/cyrsis.jpg" width="300px" height="350">
+                <h4>Crysis Warhead</h4>
+                <input type="checkbox">
+            </div>
+            <div class="col-4">
+                <img src="image/nfs mw.jpg" width="300px" height="350">
+                <h4>Need for Speed Most Wanted</h4>
+                <input type="checkbox">
+            </div>
+        </div>
+        <h3>System & Application Software</h3>
+        <div class="row">
+            <div class="col-4">
+                <img src="image/win ins.jpg" width="300px" height="350">
+                <h4>Windows Installation 7,8,10 & 11</h4>
+                <input type="checkbox">
+            </div>
+            <div class="col-4">
+                <img src="image/app ins.jpg" width="300px" height="350">
+                <h4>Apps Installation</h4>
+                <input type="checkbox">
+            </div>
+            <div class="col-4">
+                <img src="image/recovery.jpg" width="300px" height="350">
+                <h4>Blue screen Troubleshoot</h4>
+                <input type="checkbox">
+            </div>
+            <div class="col-4">
+                <img src="image/troublestooting.jpg" width="300px" height="350">
+                <h4>Recovery Mode</h4>
+                <input type="checkbox">
+            </div>
+    </div>
+    <h3>Hardware Services</h3>
+    <div class="row">
+        <div class="col-4">
+            <img src="image/pcs t.jpg" width="300px" height="350">
+            <h4>laptop Services </h4>
+            <input type="checkbox">
+        </div>
+        <div class="col-4">
+            <img src="image/ram.jpg" width="300px" height="350">
+            <h4>RAM installation</h4>
+            <input type="checkbox">
+        </div>
+        <div class="col-4">
+            <img src="image/thernal paste.jpg" width="300px" height="350">
+            <h4>Paste Application</h4>
+            <input type="checkbox">
+        </div>
+    </div>
+</div> 
+<!-------- about us -------->
+    <div class="about us">
+        <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="image/lap 2.png" class="about us-img">
+                    </div>
+                    <div class="col-5">
+                        <h1>About us</h1>
+                        <small>ULTIMATE TECH PC REPAIR is a trusted technology service provider dedicated to delivering high-quality computer repair and IT support. <br> We specialize in laptop and desktop repairs, software installation, system troubleshooting, virus removal, and hardware replacement. <br> Our commitment is to provide reliable, efficient, and affordable solutions that keep your technology running smoothly.</small>
+                    </div>
+                </div>                
+            </div>
+        </div>
+<!-------- contact us -------->
+    <div class="contact us">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="image/facebook.png" width="50px">
+                </div>
+                <div class="col-6">
+                    <img src="image/whatsapp.png" width="50px">
+                </div>
+                <div class="col-6">
+                    <img src="image/email.png  " width="50px">
+                </div>
+            </div>
+        </div>
+    </div>  
+<!-------- js for toggle menu -------->  
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            
+        }
+    </script>
+    <section id="Home">moses</section>
+</body>
+</html>
